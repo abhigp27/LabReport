@@ -1,0 +1,165 @@
+body{
+    margin: 40px 0 0 30px;
+    width: 800px;
+}
+
+.labDetails {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.labName {
+    font-size: 34px;
+    font-family: sans-serif;
+}
+
+.labAddress {
+    font-size: 20px;
+}
+
+.custDetails {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.custDetailsRow {
+    display: flex;
+    margin-top: 10px;
+    padding-top: -5px;
+}
+
+.custDetailGroup {
+    display: flex;
+    margin-right: 30px;
+    min-width: 250px;
+}
+
+#custAgeGroup {
+    min-width: 200px;
+}
+
+.custNameDetailGroup {
+    min-width: 320px;
+}
+
+.custDetailLabel {
+    min-width: 70px;
+}
+
+.nameBox {
+    width: 250px;
+}
+
+#custAge {
+    width: 60px;
+    margin-right: 5px;
+}
+
+#custAgeLabel {
+    min-width: 40px;
+}
+
+#custAgeValue {
+    margin-right: 5px;
+}
+
+#custGenderValue {
+    margin-right: 5px;
+}
+
+.reportDateGroup {
+    margin-left: 300px;
+    width: 100%;
+}
+
+.testItemColumns {
+    display: flex;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.testItem {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.testCategoryName {
+    font-weight: bold;
+}
+
+.testCategoryItem {
+    display: flex;
+    margin-top: 10px;
+}
+
+.testName {
+    min-width: 375px;
+    font-weight: bold;
+}
+
+.testRange {
+    min-width: 250px;
+}
+
+.testResult {
+    display: flex;
+    min-width: 200px;
+}
+
+.testResultValue {
+    width: 60px;
+    margin-right: 5px;
+}
+
+.testResultPrint {
+    margin-right: 5px;
+    min-width: 110px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+.notes {
+    margin-top: 50px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.notesHeading {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.notesSubHeading {
+    font-weight: bold;
+}
+
+.foodSuggestionBox {
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.reportFindings {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.reportSign {
+    margin-top: 60px;
+    margin-right: 50px;
+    min-width: 85px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.actionKeys {
+    margin: 20px;
+}
