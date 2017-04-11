@@ -143,10 +143,19 @@ body{
     padding: 10px;
 }
 
-.reportFindings {
-    width: 100%;
-    margin-top: 20px;
+#report_comments_print_label {
+    font-weight: bold;
+    font-family: inherit;
+    margin-top: 15px;
+}
+
+#report_comments_print {
+    margin-top: 5px;
     border: 1px solid black;
+}
+
+#report_comments {
+    width: 100%;
     padding: 10px;
     font-family: inherit;
     font-size: inherit;
@@ -161,5 +170,5 @@ body{
 }
 
 .actionKeys {
-    margin: 20px;
+    margin-bottom: 20px;
 }

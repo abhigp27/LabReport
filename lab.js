@@ -35,6 +35,13 @@ $(document).ready(function () {
         for (var i = 0; i < len; i++) {
             $(".testResultPrint")[i].innerHTML = x[i].value + ' mg/100ml';
         }
+        if($("#report_comments").val() == "" || $("#report_comments").val() == null) {
+            $("#report_comments_print").css("display", "none");
+            $("#report_comments_print_label").css("display", "none");
+        } else {
+            $("#report_comments_print").html($("#report_comments").val());
+            $("#report_comments_print").css("padding", "10px");
+        }        
 
         $("#printReport").css("display", "none");
         window.print();
