@@ -1,4 +1,4 @@
-body{
+.fullReport{
     margin: 40px 0 0 30px;
     width: 800px;
 }
@@ -106,7 +106,11 @@ body{
 
 .testResult {
     display: flex;
-    min-width: 200px;
+    min-width: 120px;
+}
+
+.testResultHeader {
+    margin-left: 15px;
 }
 
 .testResultValue {
@@ -123,7 +127,7 @@ body{
 }
 
 .notes {
-    margin-top: 50px;
+    margin-top: 40px;
     border: 1px solid black;
     padding: 10px;
 }
@@ -164,11 +168,12 @@ body{
 .reportSign {
     margin-top: 60px;
     margin-right: 50px;
+    margin-bottom: 20px;
     min-width: 85px;
     display: flex;
     justify-content: flex-end;
 }
 
 .actionKeys {
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
