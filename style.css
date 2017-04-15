@@ -123,7 +123,7 @@
     width: 120px;
 }
 
-.testResultPrint {
+.testResultPrint, .customTestResultPrint {
     margin-right: 5px;
     min-width: 110px;
     display: flex;

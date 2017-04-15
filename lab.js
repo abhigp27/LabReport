@@ -24,6 +24,20 @@ $(document).ready(function () {
         element.style.height = (element.scrollHeight)+"px";
     }
 
+    $("#addNewTest").click(function () {
+        var testcategory = 
+                "<div class='testCategoryItem'>"+
+                    "<div class='testName customTestName'><input class='customTestNameBox' type='text'></div>"+
+                    "<div class='testRange customTestRange'><input class='customTestRangeBox' type='text'></div>"+
+                    "<div class='testResult'>"+
+                        "<div class='customTestResultPrint'>"+
+                            "<input class='customTestResultValue' type='text'>"+
+                        "</div>"+
+                    "</div>"+
+                "</div>";
+        $( ".testItem" ).append(testcategory);
+    });
+
     $("#printReport").click(function () {
         $("#custNameValue").html($("#custName").val());
         $("#custAgeValue").html($("#custAge").val());
@@ -32,37 +46,42 @@ $(document).ready(function () {
         
         var len = $(".testResultValue").length;
         var x = $(".testResultValue");
-        for (var i = 0; i < len-1; i++) {
+        for (var i = 0; i < len; i++) {
             $(".testResultPrint")[i].innerHTML = x[i].value + ' mg/100ml';
         }
 
-        if($(".customTestNameBox").val() == "" || $(".customTestNameBox").val() == null) {
-            $(".customTestName").css("display", "none");
-        } else {
-            $(".customTestName").html($(".customTestNameBox").val());
-        }
-
-        if($(".customTestRangeBox").val() == "" || $(".customTestRangeBox").val() == null) {
-            $(".customTestRange").css("display", "none");
-        } else {
-            $(".customTestRange").html($(".customTestRangeBox").val());
-        }
-
-        if($(".customTestResultValue").val() == "" || $(".customTestResultValue").val() == null) {
-            $(".customTestResultPrint").css("display", "none");
-        } else {
-            $(".customTestResultPrint").html($(".customTestResultValue").val());
-        }        
+        len = $(".customTestNameBox").length;
+        var customNames = $(".customTestNameBox");
+        var customRanges = $(".customTestRangeBox");
+        var customValues = $(".customTestResultValue");
+        for (var i = 0; i < len; i++) {            
+            if(customNames[i].value == "" || customNames[i].value == null) {
+                $($(".customTestName")[i]).hide();
+            } else {
+                $(".customTestName")[i].innerHTML = customNames[i].value;
+            }
+            if(customRanges[i].value == "" || customRanges[i].value == null) {
+                $($(".customTestRange")[i]).hide();
+            } else {
+                $(".customTestRange")[i].innerHTML = customRanges[i].value;
+            }
+            if(customValues[i].value == "" || customValues[i].value == null) {
+                $($(".customTestResultPrint")[i]).hide();
+            } else {
+                $(".customTestResultPrint")[i].innerHTML = customValues[i].value;
+            }
+        }                
 
         if($("#report_comments").val() == "" || $("#report_comments").val() == null) {
-            $("#report_comments_print").css("display", "none");
-            $("#report_comments_print_label").css("display", "none");
+            $("#report_comments_print").hide();
+            $("#report_comments_print_label").hide();
         } else {
             $("#report_comments_print").html($("#report_comments").val());
             $("#report_comments_print").css("padding", "10px");
         }        
 
-        $("#printReport").css("display", "none");
+        $("#addNewTest").hide();
+        $("#printReport").hide();
         window.print();
     });
 });
