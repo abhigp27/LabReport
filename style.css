@@ -118,6 +118,11 @@
     margin-right: 5px;
 }
 
+.customTestResultValue {
+    margin-right: 30px;
+    width: 120px;
+}
+
 .testResultPrint {
     margin-right: 5px;
     min-width: 110px;

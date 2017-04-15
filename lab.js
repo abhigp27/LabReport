@@ -32,9 +32,28 @@ $(document).ready(function () {
         
         var len = $(".testResultValue").length;
         var x = $(".testResultValue");
-        for (var i = 0; i < len; i++) {
+        for (var i = 0; i < len-1; i++) {
             $(".testResultPrint")[i].innerHTML = x[i].value + ' mg/100ml';
         }
+
+        if($(".customTestNameBox").val() == "" || $(".customTestNameBox").val() == null) {
+            $(".customTestName").css("display", "none");
+        } else {
+            $(".customTestName").html($(".customTestNameBox").val());
+        }
+
+        if($(".customTestRangeBox").val() == "" || $(".customTestRangeBox").val() == null) {
+            $(".customTestRange").css("display", "none");
+        } else {
+            $(".customTestRange").html($(".customTestRangeBox").val());
+        }
+
+        if($(".customTestResultValue").val() == "" || $(".customTestResultValue").val() == null) {
+            $(".customTestResultPrint").css("display", "none");
+        } else {
+            $(".customTestResultPrint").html($(".customTestResultValue").val());
+        }        
+
         if($("#report_comments").val() == "" || $("#report_comments").val() == null) {
             $("#report_comments_print").css("display", "none");
             $("#report_comments_print_label").css("display", "none");
