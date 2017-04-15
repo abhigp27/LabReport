@@ -131,6 +131,10 @@
     font-weight: bold;
 }
 
+#addNewTest {
+    margin-top: 10px;
+}
+
 .notes {
     margin-top: 40px;
     border: 1px solid black;
