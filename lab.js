@@ -19,11 +19,6 @@ $(document).ready(function () {
     }
     setDate();
 
-    function auto_grow(element) {
-        element.style.height = "5px";
-        element.style.height = (element.scrollHeight)+"px";
-    }
-
     $("#addNewTest").click(function () {
         var testcategory = 
                 "<div class='testCategoryItem'>"+
