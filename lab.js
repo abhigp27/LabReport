@@ -20,6 +20,12 @@ $(document).ready(function () {
     setDate();
 
     $("#addNewTest").click(function () {
+        // 
+        /*
+        TODO: 
+        1. Use document.createElement('div') and other properties.
+        2. Use separate field for measurement unit(left aligned) and its value(right aligned).
+        */
         var testcategory = 
                 "<div class='testCategoryItem'>"+
                     "<div class='testName customTestName'><input class='customTestNameBox' type='text'></div>"+
